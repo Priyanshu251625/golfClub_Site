@@ -198,6 +198,8 @@ video{
     width: 100%;
     height: 70vh;
     margin-top: 40px;
+    padding: 0 20px;
+
     /* background-color: red; */
     display: flex;
     align-items: center;
@@ -205,14 +207,16 @@ video{
     position: relative;
 }
 .cardin{
-    height: 100%;
-    width: 24%;
+    height: 97%;
+    width:25%;
     border-radius: 20px;
     /* background-color: blue; */
     background-size: cover;
     background-position: center;
     overflow: hidden;
     position: relative;
+    transition: all ease 0.4s;
+
 }
 #card1{
     background-image: url("https://images.unsplash.com/photo-1746209843615-6b007f4ac00d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -264,9 +268,11 @@ video{
 
 }
 .outlay h3{
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 15px;
     padding-bottom: 15px;
+    padding-right: 50px;
+    color:aliceblue;
 }
 .cardin:hover .overlay{
     opacity: 1;
@@ -274,7 +280,31 @@ video{
 .cardin:hover .outlay{
     opacity: 0;
 }
-
+.cardin:hover{
+    transform: rotate3d(1,1,0, 10deg);
+}
+#green-div{
+    height: 30vh;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom,rgb(57 170 49),rgb(164 212 33));
+}
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+#green-div h3{
+    width: 45%;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
 @keyframes scroll{
     from{
         transform: translateX(0);
